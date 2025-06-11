@@ -10,9 +10,9 @@ jobs:
   echo-goodbye:
           runs-on: ubuntu-latest
           steps:
-            - name: failed step
-              run: |
-                echo "i will fail"
+            - name: checkout code
+              uses: actions/checkout@v4
+
             - name: next step
               run: |
                   echo "next step"
