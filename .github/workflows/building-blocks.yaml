@@ -13,4 +13,13 @@ jobs:
             - name: failed step
               run: |
                 echo "i will fail"
+            - name: next step
+              run: |
+                  echo "next step"
             
+  echo-hello-now:
+          runs-on: ubuntu-latest
+          steps:
+          - name: run hello
+            run: |
+              echo "say hello"
